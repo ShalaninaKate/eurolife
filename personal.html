@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">My Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#mes"></use>
+          </svg>
+          <p class="nav__link-text">Messages</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+          <p class="nav__link-text">Profile</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--logout">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#logout"></use>
+          </svg>
+          <p class="nav__link-text">Logout</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <a href="" class="header__button button">Create new offer</a>
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <div class="profile__name">John Johnson</div>
+              <div class="profile__role profile__role--personal">Apple Inc.</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main monitoring">
+
+        <div class="monitoring__offers-info offers-info">
+          <div class="offers-info__item">
+            <div class="offers-info__top">
+              <img class="offers-info__icon" src="./img/svg/heart.svg" alt="heart">
+              <span class="offers-info__title">Active Offers</span>
+
+            </div>
+            <div class="offers-info__amount amount">
+              <div class="amount__text">1 200</div>
+              <div class="amount__change amount__change--up">
+                <span class="amount__change-amount">28.4%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="offers-info__item">
+            <div class="offers-info__top">
+              <img class="offers-info__icon" src="./img/svg/lock.svg" alt="lock">
+              <span class="offers-info__title">Сlosed Offers</span>
+
+            </div>
+            <div class="offers-info__amount amount">
+              <div class="amount__text">5 000</div>
+              <div class="amount__change amount__change--down">
+                <span class="amount__change-amount">28.4%%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="offers-info__item">
+            <div class="offers-info__top">
+              <img class="offers-info__icon" src="./img/svg/user-spec.svg" alt="user">
+              <span class="offers-info__title">Specialists Needed</span>
+
+            </div>
+            <div class="offers-info__amount amount">
+              <div class="amount__text">2 100</div>
+              <div class="amount__change amount__change--up">
+                <span class="amount__change-amount">8.5%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monitoring__chart chart-section">
+          <div class="chart-section__header">
+            <div class="table__title">
+              <h2 class="title title--chart">Offers </h2>
+              <span class="title__filter">Active
+                offers/closed offers</span>
+            </div>
+
+            <div class="chart-section__filter options-filter">
+              <div class="options-filter__item">
+                <input id="years_5" type="radio" name="role" class="options-filter__input">
+                <label for="years_5" class="options-filter__label">5 Years</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="years_1" type="radio" name="role" class="options-filter__input">
+                <label for="years_1" class="options-filter__label">1 Years</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="month_1" type="radio" name="role" class="options-filter__input">
+                <label for="month_1" class="options-filter__label">1 Month</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="week_1" type="radio" name="role" class="options-filter__input">
+                <label for="week_1" class="options-filter__label">1 Week</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="day_1" type="radio" name="role" class="options-filter__input" checked>
+                <label for="day_1" class="options-filter__label">1 Day</label>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="chart-section__graph">
+            <img src="./img/graph.png" alt="">
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Модальные окна</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+
+
+  <div class="container-modal">
+    <div class="buttons">
+      <button class="button" data-path="editing_requirements" data-animation="fadeInUp">Creation of editing
+        requirements</button>
+
+    </div>
+
+    <div class="modal">
+
+      <!-- Creation of editing
+        requirements -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="editing_requirements">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="editing">
+          <h2 class="editing__title title">Creation of editing requirements</h2>
+          <form action="#" class="editing__form form">
+
+            <div class="form__items">
+              <div class="form__item">
+                <label class="form__label">Type of demand</label>
+                <div class="input input-select">
+                  <input class="input__control input__control--select dropdown-input" type="text" name=""
+                    value="Jurisdiction" readonly>
+
+                  <button class="input__btn dropdown-button">
+                    <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                  </button>
+                  <ul class="dropdown-select">
+                    <li class="dropdown-select__item">1</li>
+                    <li class="dropdown-select__item">2</li>
+                    <li class="dropdown-select__item">3</li>
+                    <li class="dropdown-select__item">4</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__item ">
+                <label class="form__label">Description of the requirements</label>
+                <div class="input input--textarea">
+                  <textarea class="input__control input__control--textarea" name="" id=""
+                    placeholder="Enter the text"></textarea>
+
+                </div>
+              </div>
+            </div>
+            <button type="button" class="editing__button button">Apply</button>
+          </form>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+<style>
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .button {
+      width: 200px;
+      height: 50px;
+    }
+  }
+
+  .container-modal {
+    padding: 50px;
+  }
+
+</style>
+
+</html>

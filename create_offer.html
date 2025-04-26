@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Offer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">My Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#mes"></use>
+          </svg>
+          <p class="nav__link-text">Messages</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+          <p class="nav__link-text">Profile</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--logout">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#logout"></use>
+          </svg>
+          <p class="nav__link-text">Logout</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <div class="profile__name">John Johnson</div>
+              <div class="profile__role profile__role--personal">Apple Inc.</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="profile-person">
+          <div class="profile-person__form">
+            <form class="form">
+              <div class="form__title title">Create Offer</div>
+              <div class="form__items">
+                <div class="form__item">
+                  <label class="form__label">Qualification</label>
+                  <div class="input input-select">
+                    <input class="input__control input__control--select dropdown-input" type="text" name=""
+                      value="Qualification" readonly>
+
+                    <button class="input__btn dropdown-button">
+                      <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                    </button>
+                    <ul class="dropdown-select">
+                      <li class="dropdown-select__item">1</li>
+                      <li class="dropdown-select__item">2</li>
+                      <li class="dropdown-select__item">3</li>
+                      <li class="dropdown-select__item">4</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__item">
+                    <label class="form__label">Number of specialists</label>
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value="15"
+                        readonly>
+
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                      </button>
+                      <ul class="dropdown-select">
+                        <li class="dropdown-select__item">1</li>
+                        <li class="dropdown-select__item">2</li>
+                        <li class="dropdown-select__item">3</li>
+                        <li class="dropdown-select__item">4</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label">State</label>
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value="UK"
+                        readonly>
+
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                      </button>
+                      <ul class="dropdown-select">
+                        <li class="dropdown-select__item">1</li>
+                        <li class="dropdown-select__item">2</li>
+                        <li class="dropdown-select__item">3</li>
+                        <li class="dropdown-select__item">4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row form__row--period">
+                  <span class="form__row-title">Period of validity</span>
+                  <div class="form__item">
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value=""
+                        placeholder="from" readonly>
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/calendar.svg" alt="calendar" class="input__btn-calendar">
+                      </button>
+                    </div>
+                  </div>
+                  <span>-</span>
+                  <div class="form__item">
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value=""
+                        placeholder="from" readonly>
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/calendar.svg" alt="calendar" class=" input__btn-calendar">
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">Requirements for specialists</label>
+                  <div class="input input--textarea">
+                    <textarea class="input__control input__control--textarea" name="" id=""
+                      placeholder="Enter text"></textarea>
+                  </div>
+                </div>
+                <div class="form__item">
+                  <button class="form__file">
+                    <input type="file" name="image" class="form__file-input">
+                    <div class="form__file-text">Add offer cover <span class="form__file-type">.png,
+                        .jpg 600X200 px</span></div>
+                  </button>
+                </div>
+              </div>
+              <div class="form__buttons">
+                <a href="#" class="form__button button disabled">save draft</a>
+                <a href="#" class="form__button button button--gradient"><span
+                    class="button__grd-text">preview</span></a>
+                <a href="#" class="form__button button">publish</a>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Monitoring Panel</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <button id="reference-books" class="nav__link " type="button">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#book-fill"></use>
+          </svg>
+          <p class="nav__link-text">Reference Books</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <ul id="submenu" class="nav__submenu">
+          <li class="nav__submenu-item"><a href="#" class="nav__link nav__link--submenu ">Speciality
+              <svg class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a></li>
+          <li class="nav__submenu-item"><a href="#"
+              class="nav__link nav__link--submenu ">Requirements <svg
+                class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg></a></li>
+
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#report-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Reports</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#paw"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+</aside>
+
+    <div class="page">
+            <header class="header">
+
+        <div class="header__calendar ">
+          <div class="filters">
+            <div class="filters__item">
+              <button id="date-range-input" class="filters__btn" type="button">
+                <span id="range-label" class="filters__title">Date Range</span>
+                <svg class="filters__icon">
+                  <use xlink:href="img/sprite.svg#calendar"></use>
+                </svg>
+              </button>
+              <div class="" id="calendar-container">
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="header__actions ">
+
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <!-- <div class="profile__name">Moni Roy</div> -->
+              <div class="profile__role">Admin123456</div>
+            </div>
+
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+
+          </button>
+
+
+        </div>
+      </header>
+
+      <main class="main monitoring">
+
+        <div class="monitoring__offers-info offers-info">
+          <div class="offers-info__item">
+            <div class="offers-info__top">
+              <img class="offers-info__icon" src="./img/svg/heart.svg" alt="heart">
+              <span class="offers-info__title">Active Offers</span>
+
+            </div>
+            <div class="offers-info__amount amount">
+              <div class="amount__text">1 200</div>
+              <div class="amount__change amount__change--up">
+                <span class="amount__change-amount">28.4%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="offers-info__item">
+            <div class="offers-info__top">
+              <img class="offers-info__icon" src="./img/svg/lock.svg" alt="lock">
+              <span class="offers-info__title">Сlosed Offers</span>
+
+            </div>
+            <div class="offers-info__amount amount">
+              <div class="amount__text">5 000</div>
+              <div class="amount__change amount__change--down">
+                <span class="amount__change-amount">28.4%%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+          <div class="offers-info__item">
+            <div class="offers-info__top">
+              <img class="offers-info__icon" src="./img/svg/user-spec.svg" alt="user">
+              <span class="offers-info__title">Specialists Needed</span>
+
+            </div>
+            <div class="offers-info__amount amount">
+              <div class="amount__text">2 100</div>
+              <div class="amount__change amount__change--up">
+                <span class="amount__change-amount">8.5%</span>
+                <svg class="amount__change-icon">
+                  <use xlink:href="img/sprite.svg#arrow-change"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="monitoring__chart chart-section">
+          <div class="chart-section__header">
+            <div class="table__title">
+              <h2 class="title title--chart">Offers </h2>
+              <span class="title__filter">Active
+                offers/closed offers</span>
+            </div>
+
+            <div class="chart-section__filter options-filter">
+              <div class="options-filter__item">
+                <input id="years_5" type="radio" name="role" class="options-filter__input">
+                <label for="years_5" class="options-filter__label">5 Years</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="years_1" type="radio" name="role" class="options-filter__input">
+                <label for="years_1" class="options-filter__label">1 Years</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="month_1" type="radio" name="role" class="options-filter__input">
+                <label for="month_1" class="options-filter__label">1 Month</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="week_1" type="radio" name="role" class="options-filter__input">
+                <label for="week_1" class="options-filter__label">1 Week</label>
+              </div>
+              <div class="options-filter__item">
+                <input id="day_1" type="radio" name="role" class="options-filter__input" checked>
+                <label for="day_1" class="options-filter__label">1 Day</label>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="chart-section__graph">
+            <img src="./img/graph.png" alt="">
+          </div>
+        </div>
+        <div class="monitoring__offers">
+          <div class="offers table">
+            <div class="offers__header table__header">
+              <div class="table__title">
+                <h2 class="title ">Last Offers </h2>
+                <span class="title__filter">Last 30
+                  days</span>
+              </div>
+            </div>
+            <div class="offers__table table__container">
+              <div class="table__body">
+                <div class="table__row">
+                  <ul class="offers__table-items table__items table__items--title">
+                    <li class="table__item">ID</li>
+                    <li class="table__item">Date Created</li>
+                    <li class="table__item">Date Published</li>
+                    <li class="table__item">Specialty</li>
+                    <li class="table__item">Actual</li>
+                    <li class="table__item">Amount</li>
+                    <li class="table__item">Company</li>
+                    <li class="table__item">State</li>
+                    <li class="table__item">Status</li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--closed">Closed</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item">Germany</li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pagination">
+                  <button class="pagination__btn">Prev</button>
+                  <a href="#" class="pagination__item active">1</a>
+                  <a href="#" class="pagination__item">2</a>
+                  <a href="#" class="pagination__item">3</a>
+                  <a href="#" class="pagination__item">4</a>
+                  <span href="#" class="dots">...</span>
+                  <a href="#" class="pagination__item">12</a>
+                  <button class="pagination__btn">Next</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Report</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <button id="reference-books" class="nav__link " type="button">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#book-fill"></use>
+          </svg>
+          <p class="nav__link-text">Reference Books</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <ul id="submenu" class="nav__submenu">
+          <li class="nav__submenu-item"><a href="#" class="nav__link nav__link--submenu ">Speciality
+              <svg class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a></li>
+          <li class="nav__submenu-item"><a href="#"
+              class="nav__link nav__link--submenu ">Requirements <svg
+                class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg></a></li>
+
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#report-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Reports</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#paw"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <div class="profile__role">Admin123456</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main ">
+        <div class="reports">
+          <div class="reports__form">
+            <form class="form">
+              <div class="form__title title">Create Report</div>
+              <div class="form__items">
+                <!-- <div class="form__item error">
+                <label class="form__label">Report Name</label>
+                <div class="input">
+                  <input class="input__control" type="text" name="" value="123">
+                </div>
+                <span class="error-text">error</span>
+              </div> -->
+                <div class="form__item ">
+                  <label class="form__label">Report Name</label>
+                  <div class="input">
+                    <input class="input__control" type="text" name="" value="123">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__item">
+                    <label class="form__label">Employer</label>
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name=""
+                        value="Apple Inc" readonly>
+
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                      </button>
+                      <ul class="dropdown-select">
+                        <li class="dropdown-select__item">1</li>
+                        <li class="dropdown-select__item">2</li>
+                        <li class="dropdown-select__item">3</li>
+                        <li class="dropdown-select__item">4</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label">Speciality</label>
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name=""
+                        value="Worker" readonly>
+
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                      </button>
+                      <ul class="dropdown-select">
+                        <li class="dropdown-select__item">1</li>
+                        <li class="dropdown-select__item">2</li>
+                        <li class="dropdown-select__item">3</li>
+                        <li class="dropdown-select__item">4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row form__row--period">
+                  <span class="form__row-title">Period of validity</span>
+                  <div class="form__item">
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value=""
+                        placeholder="from" readonly>
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/calendar.svg" alt="calendar" class="input__btn-calendar">
+                      </button>
+                    </div>
+                  </div>
+                  <span>-</span>
+                  <div class="form__item">
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value=""
+                        placeholder="from" readonly>
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/calendar.svg" alt="calendar" class=" input__btn-calendar">
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__item">
+                    <label class="form__label">Jurisdiction</label>
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value="1"
+                        readonly>
+
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                      </button>
+                      <ul class="dropdown-select">
+                        <li class="dropdown-select__item">1</li>
+                        <li class="dropdown-select__item">2</li>
+                        <li class="dropdown-select__item">3</li>
+                        <li class="dropdown-select__item">4</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label">Amount</label>
+                    <div class="input input-select">
+                      <input class="input__control input__control--select dropdown-input" type="text" name="" value="12"
+                        readonly>
+
+                      <button class="input__btn dropdown-button">
+                        <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-arrow">
+                      </button>
+                      <ul class="dropdown-select">
+                        <li class="dropdown-select__item">1</li>
+                        <li class="dropdown-select__item">2</li>
+                        <li class="dropdown-select__item">3</li>
+                        <li class="dropdown-select__item">4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form__actions">
+                <div class="form__checkbox checkbox">
+                  <input id="onlyActive" type="checkbox" name="active" class="checkbox__input ">
+                  <label for="onlyActive" class="checkbox__label">
+                    <p class="checkbox__label-text">Only active</p>
+                  </label>
+                </div>
+                <div class="form__options">
+                  <div class="options">
+                    <div class="options__item">
+                      <input id="CSV" type="radio" name="type" class="options__input">
+                      <label for="CSV" class="options__label">CSV</label>
+                    </div>
+                    <div class="options__item">
+                      <input id="XLSX" type="radio" name="type" class="options__input">
+                      <label for="XLSX" class="options__label">XLSX</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <button class="form__button button">Create</button>
+            </form>
+
+
+          </div>
+          <div class="reports__table">
+            <div class=" table">
+              <div class="table__header table__header--reports">
+                <div class="table__title">
+                  <h2 class="title ">Ready-made reports </h2>
+                </div>
+              </div>
+              <div class="reports__table-body">
+
+                <div class="table__row">
+                  <ul class="reports__table-items table__items table__items--title">
+                    <li class="table__item">ID</li>
+                    <li class="table__item">Date Created</li>
+                    <li class="table__item">Name</li>
+                    <li class="table__item">Report</li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="reports__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">CSV</li>
+                    <li class="table__item">
+                      <div class="table__item-actions">
+                        <button type="button" class="table__item-btn">
+                          <svg class="table__item-btn-icon">
+                            <use xlink:href="img/sprite.svg#bin">
+                            </use>
+                          </svg>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="reports__table-pagination pagination">
+                  <button class="pagination__btn">Prev</button>
+                  <a href="#" class="pagination__item active">1</a>
+                  <a href="#" class="pagination__item">2</a>
+                  <a href="#" class="pagination__item">3</a>
+                  <a href="#" class="pagination__item">4</a>
+                  <span href="#" class="dots">...</span>
+                  <a href="#" class="pagination__item">12</a>
+                  <button class="pagination__btn">Next</button>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+
+</html>

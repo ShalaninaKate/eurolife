@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Messages</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">My Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#mes"></use>
+          </svg>
+          <p class="nav__link-text">Messages</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#user"></use>
+          </svg>
+          <p class="nav__link-text">Profile</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--logout">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#logout"></use>
+          </svg>
+          <p class="nav__link-text">Logout</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <div class="profile__name">John Johnson</div>
+              <div class="profile__role profile__role--personal">Apple Inc.</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="profile-person">
+          <h2 class="profile-person__title title">Messages</h2>
+          <div class="chat">
+            <div class="chat__header">
+              <div class="chat__header-profile profile online">
+                <div class="profile__ava">
+                  <img class="profile__img" src="./img/user.jpg" alt="ava">
+                </div>
+                <div class="profile__info">
+                  <div class="profile__name">Sophie Moore</div>
+                  <div class="profile__mail">@sophiemoore</div>
+                </div>
+              </div>
+
+            </div>
+            <div class="chat__body">
+              <div class="chat__messages">
+                <ul class="chat__message chat__message--support">
+                  <li class="chat__message-item">
+                    <div class="chat__message-ava">
+                      <div class="profile__user profile online">
+                        <div class="profile__ava ">
+                          <img class="profile__img" src="./img/user.jpg" alt="ava">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__message-content">
+                      <ul class="chat__message-block">
+                        <li class="chat__message-text">Hello John! Hope you’re doing well. I need your help with some
+                          reports, are you available for a call later today?</li>
+                        <li class="chat__message-text">Thank you</li>
+                      </ul>
+                      <div class="chat__message-time">11:36 AM</div>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="chat__messages">
+                <ul class="chat__message chat__message--user">
+                  <li class="chat__message-item">
+                    <div class="chat__message-content">
+                      <ul class="chat__message-block">
+                        <li class="chat__message-text">Hey Sophie! How are you?</li>
+                        <li class="chat__message-text">For sure, I’ll be free after mid-day, let me know what time
+                          works for you</li>
+                      </ul>
+                      <div class="chat__message-time">11:41 AM</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form class="chat__input-container">
+              <textarea class="chat__input" placeholder="Type a message"></textarea>
+              <div class="chat__input-actions">
+                <button type="submit" class="chat__input-button button">Send now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

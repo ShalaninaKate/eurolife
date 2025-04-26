@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Report 2</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <button id="reference-books" class="nav__link " type="button">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#book-fill"></use>
+          </svg>
+          <p class="nav__link-text">Reference Books</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <ul id="submenu" class="nav__submenu">
+          <li class="nav__submenu-item"><a href="#" class="nav__link nav__link--submenu ">Speciality
+              <svg class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a></li>
+          <li class="nav__submenu-item"><a href="#"
+              class="nav__link nav__link--submenu ">Requirements <svg
+                class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg></a></li>
+
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#report-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Reports</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#paw"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <div class="profile__role">Admin123456</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main offers">
+
+
+        <div class="offers__table">
+          <div class=" table">
+            <div class="table__header">
+              <div class="table__title">
+                <h2 class="title ">Report #093488r5 </h2>
+              </div>
+              <ul class="table__report">
+                <li class="table__report-item">
+                  <span class="table__report-title">Date Created</span>
+                  <span class="table__report-text">24.03.2025</span>
+                </li>
+                <li class="table__report-item">
+                  <span class="table__report-title">Offer validity period</span>
+                  <span class="table__report-text">from 01.05. 25 to 18.08.25</span>
+                </li>
+                <li class="table__report-item">
+                  <span class="table__report-title">Jurisdictions</span>
+                  <span class="table__report-text">Germany</span>
+                </li>
+                <li class="table__report-item">
+                  <span class="table__report-title">Amount</span>
+                  <span class="table__report-text">Not found</span>
+                </li>
+              </ul>
+
+
+            </div>
+            <div class="table__container">
+              <div class="table__body">
+                <div class="table__row">
+                  <ul class="offers__table-items table__items table__items--title">
+                    <li class="table__item">ID</li>
+                    <li class="table__item">Date Created</li>
+                    <li class="table__item">Date Published</li>
+                    <li class="table__item">Specialty</li>
+                    <li class="table__item">Actual</li>
+                    <li class="table__item">Amount</li>
+                    <li class="table__item">Company</li>
+                    <li class="table__item">State</li>
+                    <li class="table__item">Status</li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--closed">Closed</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--draft">Draft</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item">Germany</li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="offers__table-items table__items ">
+                    <li class="table__item"><span>6559</span></li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item">Worker</li>
+                    <li class="table__item">24.03.2025</li>
+                    <li class="table__item"><span>50</span></li>
+                    <li class="table__item">Apple Inc</li>
+                    <li class="table__item"><span>Germany</span></li>
+                    <li class="table__item">
+                      <div class="table__item-status table__item-status--active">Active</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pagination">
+                  <button class="pagination__btn">Prev</button>
+                  <a href="#" class="pagination__item active">1</a>
+                  <a href="#" class="pagination__item">2</a>
+                  <a href="#" class="pagination__item">3</a>
+                  <a href="#" class="pagination__item">4</a>
+                  <span href="#" class="dots">...</span>
+                  <a href="#" class="pagination__item">12</a>
+                  <button class="pagination__btn">Next</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+</body>
+
+</html>

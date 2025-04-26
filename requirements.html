@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Requirements</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+
+  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Monitoring Panel</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#list-fill"></use>
+          </svg>
+          <p class="nav__link-text">Offers</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <button id="reference-books" class="nav__link active-btn" type="button">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#book-fill"></use>
+          </svg>
+          <p class="nav__link-text">Reference Books</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <ul id="submenu" class="nav__submenu">
+          <li class="nav__submenu-item"><a href="#" class="nav__link nav__link--submenu ">Speciality
+              <svg class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a></li>
+          <li class="nav__submenu-item"><a href="#"
+              class="nav__link nav__link--submenu active">Requirements <svg
+                class="nav__link-arrow nav__link-arrow--submenu">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg></a></li>
+
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#report-rounded"></use>
+          </svg>
+          <p class="nav__link-text">Reports</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#paw"></use>
+          </svg>
+          <p class="nav__link-text">Users</p>
+          <svg class="nav__link-arrow">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header__profile profile">
+            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <div class="profile__info">
+              <div class="profile__role">Admin123456</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="main reference-books">
+        <button class="reference-books__button button" type="button">Add a new requirement</button>
+        <ul class="reference-books__list">
+          <li class="reference-books__item ">
+            <div class="reference-books__title">
+              Age
+              <span class="reference-books__title-descr">from 25 years</span>
+            </div>
+
+            <div class="reference-books__actions">
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon reference-books__action-icon--edit">
+                  <use xlink:href="img/sprite.svg#edit"></use>
+                </svg>
+              </button>
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon ">
+                  <use xlink:href="img/sprite.svg#bin"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="reference-books__item ">
+            <div class="reference-books__title">
+              Sex
+              <span class="reference-books__title-descr">Male</span>
+            </div>
+
+            <div class="reference-books__actions">
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon reference-books__action-icon--edit">
+                  <use xlink:href="img/sprite.svg#edit"></use>
+                </svg>
+              </button>
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon ">
+                  <use xlink:href="img/sprite.svg#bin"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="reference-books__item ">
+            <div class="reference-books__title">
+              Education
+              <span class="reference-books__title-descr">Average or average special</span>
+            </div>
+
+            <div class="reference-books__actions">
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon reference-books__action-icon--edit">
+                  <use xlink:href="img/sprite.svg#edit"></use>
+                </svg>
+              </button>
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon ">
+                  <use xlink:href="img/sprite.svg#bin"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="reference-books__item ">
+            <div class="reference-books__title">
+              Education
+              <span class="reference-books__title-descr">Certificate or diploma about the
+                profession</span>
+            </div>
+
+            <div class="reference-books__actions">
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon reference-books__action-icon--edit">
+                  <use xlink:href="img/sprite.svg#edit"></use>
+                </svg>
+              </button>
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon ">
+                  <use xlink:href="img/sprite.svg#bin"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="reference-books__item ">
+            <div class="reference-books__title">
+              Jurisdiction the candidate
+              <span class="reference-books__title-descr">For US citizens only</span>
+            </div>
+
+            <div class="reference-books__actions">
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon reference-books__action-icon--edit">
+                  <use xlink:href="img/sprite.svg#edit"></use>
+                </svg>
+              </button>
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon ">
+                  <use xlink:href="img/sprite.svg#bin"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="reference-books__item ">
+            <div class="reference-books__title">
+              Experience
+              <span class="reference-books__title-descr">Only with confirmed experience</span>
+            </div>
+
+            <div class="reference-books__actions">
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon reference-books__action-icon--edit">
+                  <use xlink:href="img/sprite.svg#edit"></use>
+                </svg>
+              </button>
+              <button class="reference-books__action">
+                <svg class="reference-books__action-icon ">
+                  <use xlink:href="img/sprite.svg#bin"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <div class="reference-books__pagination pagination">
+          <button class="pagination__btn">Prev</button>
+          <a href="#" class="pagination__item active">1</a>
+          <a href="#" class="pagination__item">2</a>
+          <a href="#" class="pagination__item">3</a>
+          <a href="#" class="pagination__item">4</a>
+          <span href="#" class="dots">...</span>
+          <a href="#" class="pagination__item">12</a>
+          <button class="pagination__btn">Next</button>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
