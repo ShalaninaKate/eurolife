@@ -17,7 +17,7 @@
 
     <aside class="sidebar">
 
-  <a href="#" class="sidebar__logo"><img src="../img/logo.svg" alt=""></a>
+  <a href="#" class="sidebar__logo"><img src="./img/logo.svg" alt=""></a>
 
   <nav class="sidebar__nav nav">
     <ul class="nav__list">
@@ -97,49 +97,114 @@
 
     <div class="page">
             <header class="header">
-
         <div class="header__calendar ">
           <div class="filters">
-            <div class="filters__item">
-              <button id="date-range-input" class="filters__btn" type="button">
-                <span id="range-label" class="filters__title">Date Range</span>
+            <div class="filters__item dropdown-item">
+              <button class="filters__btn dropdown-btn" type="button">
+                <span class="filters__title">Date Range</span>
                 <svg class="filters__icon">
                   <use xlink:href="img/sprite.svg#calendar"></use>
                 </svg>
               </button>
-              <div class="" id="calendar-container">
+              <div class="dropdown-filter dropdown">
+                <div class="calendar">
+                  <div class="calendar__header">
+                    <button class="calendar__nav-btn calendar__nav-btn--back">
+                      <svg class="calendar__nav-arrow">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                    <span class="calendar__title">February 2025</span>
+                    <button class="calendar__nav-btn calendar__nav-btn--next">
+                      <svg class="calendar__nav-arrow">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="calendar__table">
+                    <div class="calendar__items calendar__items--title">
+                      <span class="calendar__item">MON</span>
+                      <span class="calendar__item">Tue</span>
+                      <span class="calendar__item">WED</span>
+                      <span class="calendar__item">Thu</span>
+                      <span class="calendar__item">FRI</span>
+                      <span class="calendar__item">SAT</span>
+                      <span class="calendar__item">Sun</span>
+                    </div>
+                    <div class="calendar__body">
+                      <div class="calendar__items">
+                        <span class="calendar__item">27</span>
+                        <span class="calendar__item">28</span>
+                        <span class="calendar__item">29</span>
+                        <span class="calendar__item">30</span>
+                        <span class="calendar__item">1</span>
+                        <span class="calendar__item">2</span>
+                        <span class="calendar__item">3</span>
+                      </div>
+                      <div class="calendar__items">
+                        <span class="calendar__item">4</span>
+                        <span class="calendar__item">5</span>
+                        <span class="calendar__item">6</span>
+                        <span class="calendar__item">7</span>
+                        <span class="calendar__item">8</span>
+                        <span class="calendar__item">9</span>
+                        <span class="calendar__item">10</span>
+                      </div>
+                      <div class="calendar__items">
+                        <span class="calendar__item">11</span>
+                        <span class="calendar__item">12</span>
+                        <span class="calendar__item">13</span>
+                        <span class="calendar__item">14</span>
+                        <span class="calendar__item">15</span>
+                        <span class="calendar__item">16</span>
+                        <span class="calendar__item active">17</span>
+                      </div>
+                      <div class="calendar__items">
+                        <span class="calendar__item">18</span>
+                        <span class="calendar__item">19</span>
+                        <span class="calendar__item">20</span>
+                        <span class="calendar__item">21</span>
+                        <span class="calendar__item">22</span>
+                        <span class="calendar__item">23</span>
+                        <span class="calendar__item">24</span>
+                      </div>
+                      <div class="calendar__items">
+                        <span class="calendar__item">25</span>
+                        <span class="calendar__item">26</span>
+                        <span class="calendar__item">27</span>
+                        <span class="calendar__item">28</span>
+                        <span class="calendar__item">29</span>
+                        <span class="calendar__item">30</span>
+                        <span class="calendar__item">31</span>
+                      </div>
+                    </div>
 
-
+                  </div>
+                </div>
+                <div class="dropdown-filter__bottom">
+                  <button class="dropdown-filter__button button button--trasparent">Close</button>
+                  <button class="dropdown-filter__button button">Apply</button>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
-
         <div class="header__actions ">
-
           <button type="button" class="header__notification notification">
             <svg class="notification__icon">
               <use xlink:href="img/sprite.svg#notification"></use>
             </svg>
           </button>
-
-
-
           <button type="button" class="header__profile profile">
-            <img class="profile__ava" src="../img/avatar.svg" alt="ava">
+            <img class="profile__ava" src="./img/avatar.svg" alt="ava">
             <div class="profile__info">
               <!-- <div class="profile__name">Moni Roy</div> -->
               <div class="profile__role">Admin123456</div>
             </div>
-
             <svg class="profile__icon">
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
-
           </button>
-
-
         </div>
       </header>
 
